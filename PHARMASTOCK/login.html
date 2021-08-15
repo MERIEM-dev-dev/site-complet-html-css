@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login-Welcome to our pharmastock</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" href="pic/icon.png">
+
+
+
+</head>
+<body>
+   
+
+    <div class="hero">
+        <div id="discreption">
+        <h1 id="h1">WELCOME TO OUR PHARMACY</h1>
+        <div id="h2">
+        <p >E-pharmacy: a commercial site that offers products
+            and medical<br> services to doctors this is a big
+             pharmacy rich in products<br> meeting many needs.</p>
+    </div>
+    </div>
+        <div class="form">
+    <div class="button-box">
+        <div id="btn"></div>
+        <button type="button" class="toggle-btn" onclick="login()"> login</button>
+        <button type="button" class="toggle-btn" onclick="Register()">Register</button>
+
+    </div>
+<form id="login" class="input-group">
+<input type="text" class="input-field" placeholder="User Id" required>
+<br>
+<input type="text" class="input-field" placeholder="Enter Password" required>
+<br>
+<div class="radio">
+
+<input type="radio" name="r1" id="medecin" checked>
+<label>doctor</label>
+<br>
+
+<input type="radio" name="r1" id="Pharmacien" checked>
+<label>pharmacy</label>
+<br>
+</div>
+<input type="checkbox" class="chech-box"><span>Remember Password</span>
+<button type="submit" class="submit-btn">log in</button>
+</form>
+<form id="Register" class="input-group">
+    <input type="text" class="input-field" placeholder="User Id" required>
+    <br>
+    <input type="email" class="input-field" placeholder="Email Id" required>
+
+    <input type="text" class="input-field" placeholder="Enter Password" required>
+    <br>
+    <input type="checkbox" class="chech-box"><span>I agree to the terms & conditions</span>
+    <button type="submit" class="submit-btn"><a href="PH.html">Register</a></button>
+    </form>
+</div>
+</div>
+<script>
+var x = document.getElementById("login");
+var y = document.getElementById("Register");
+var z = document.getElementById("btn");
+
+function Register(){
+    x.style.left = "-440px";
+    y.style.left = "50px";
+    z.style.left = "110px";
+}
+function login(){
+    x.style.left = "50px";
+    y.style.left = "450px";
+    z.style.left = "0";
+
+}
+
+</script>
+</body>
+
+
+
+
+</html>
